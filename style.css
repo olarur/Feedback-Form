@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #37af65;
+    --text-color1: #f3f3f3;
+    --bg-color2: rgba(27, 27, 50, 0.8);
+    --border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+header {
+    color: var(--text-color1);
+    text-align: center;
+    padding: 3em 2em 0em 2em;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+#feedback-form {
+    color: var(--text-color1);
+    background-color: var(--bg-color2);
+    margin: 2em 10%;
+    border-radius: var(--border-radius);
+    padding: 2em;
+}
+
+.form-input {
+    border-radius: var(--border-radius);
+    height: 2.5em;
+    width: 100%;
+    margin: 0.5em 0;
+    padding-left: 1em;
+}
+
+.input-label {
+    margin-top: 0.5em;
+    display: block;
+}
+
+.selection-choice {
+    margin-top: 0.4em;
+}
+
+.selection-group {
+    margin: 1em 0 1em 0;
+}
+
+.comment-input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+.btn-submit {
+    margin-top: 2em;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color1);
+    height: 3em;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular ITF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formular ITF</h1>
+        <p><em>Thank you for helping us improve!</em></p>
+    </header>
+    <form action="#" id="feedback-form">
+        <label class="input-label" for="name">Name</label>
+        <input name="name" id="name" class="form-input" type="text" placeholder="Enter your Name" required>
+        <label class="input-label" for="email">Email</label>
+        <input name="email" id="email" class="form-input" type="email" placeholder="Enter your Email" required>
+        <label class="input-label" for="role">Which option best describes your current role?</label>
+        <select class="form-input" name="role" id="role" required>
+            <option value="" disabled selected>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full-time Job">Full-time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <section class="selection-group">
+            <p>Would you recommend ITFactory to a friend?</p>
+            <div class="selection-choice">
+                <input type="radio" id="definitely" name="recommend" checked>
+                <label for="definitely">Definitely</label>
+            </div>
+            <div class="selection-choice">
+                <input type="radio" id="maybe" name="recommend">
+                <label for="maybe">Maybe</label> 
+            </div>
+            <div class="selection-choice">
+                <input type="radio" id="not-sure" name="recommend">
+                <label for="not-sure">Not sure</label>
+            </div>
+        </section>
+        <label class="input-label" for="about">Where did you learn about us?</label>
+        <select class="form-input" name="about" id="about" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="email">Email</option>
+            <option value="from-a-friend">From a friend</option>
+            <option value="other">Other</option>
+        </select>
+
+        <section class="selection-group">
+            <p>What would you like to learn?(<small>Check all that apply</small>)</p>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="frontend">
+                <label for="frontend">Front-end Projects</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="backend">
+                <label for="backend">Back-end Projects</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="websites">
+                <label for="websites">Websites</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="responsiveness">
+                <label for="responsiveness">Responsiveness</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="xhr">
+                <label for="xhr">XHR Requests</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="dom">
+                <label for="dom">DOM Elements</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="datatypes">
+                <label for="datatypes">Datatypes</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="arrays">
+                <label for="arrays">Arrays</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="strings">
+                <label for="strings">Strings</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="objects">
+                <label for="objects">Objects</label>
+            </div>
+            <div class="selection-choice">
+                <input type="checkbox" name="preferences" id="functions">
+                <label for="functions">Functions</label>
+            </div>
+        </section>
+
+        <section>
+            <label class="input-label" for="comment">Any comments or suggestions?</label>
+            <textarea class="comment-input" rows="4" placeholder="Enter your comment here..."></textarea>
+        </section>
+        <button class="btn-submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
